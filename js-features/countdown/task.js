@@ -3,10 +3,10 @@
          if (timer.textContent != 0) {
         timer.textContent -= 1; 
         } else {
-            clearInterval();
+            clearInterval(inervalID);
             alert("Вы победили в конкурсе!");
         }
     };  
-    setInterval(timerDec,1000);
+    const inervalID = setInterval(timerDec,1000);
 
  
